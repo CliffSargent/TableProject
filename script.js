@@ -1,11 +1,8 @@
 "use strict"
 
-
-
-$(document).on("click", function(e){
-    $(".reservation").css("display", "flex");
-    
-});
-
-
-
+$(document).ready(function(){ 
+    $('.reservation').hide();
+    $(".middle").click(function() { 
+      $(".reservation").fadeIn("slow");
+    });
+  });
